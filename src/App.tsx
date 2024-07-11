@@ -1,5 +1,7 @@
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import { motion } from "framer-motion";
+import HomePage from "./HomePage/HomePage";
 
 function App() {
   // const list = { hidden: { opacity: 0 } };
@@ -7,7 +9,10 @@ function App() {
 
   return (
     <>
-      <motion.div
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+      {/* <motion.div
         className="box"
         initial={{ opacity: 0, x: -500 }}
         animate={{ opacity: 1, x: 200 }}
@@ -30,7 +35,7 @@ function App() {
           borderRadius: ["20%", "20%", "50%", "50%", "20%"],
         }}
         transition={{ repeat: Infinity, ease: "easeOut", duration: 5 }}
-      />
+      /> */}
 
       {/* <motion.ul animate="hidden" variants={list}>
         <motion.li variants={item} />
