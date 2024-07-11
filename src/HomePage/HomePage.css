@@ -1,0 +1,27 @@
+/* .menu-icon::after,
+.menu-icon::before {
+  content: "";
+  display: block;
+  width: 40%;
+  background-color: white;
+  height: 1px;
+  margin: auto;
+  position: relative;
+}
+
+.menu-icon::after {
+  top: -5px;
+}
+
+.menu-icon::before {
+  top: 5px;
+}
+
+.menu-icon-active::after {
+  top: -1px;
+}
+
+.menu-icon-active::before {
+  top: 1px;
+  transform: rotate(45deg);
+} */
